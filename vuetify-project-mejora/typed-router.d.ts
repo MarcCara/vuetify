@@ -20,6 +20,7 @@ declare module 'vue-router/auto-routes' {
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/buscador': RouteRecordInfo<'/buscador', '/buscador', Record<never, never>, Record<never, never>>,
+    '/classic': RouteRecordInfo<'/classic', '/classic', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -39,6 +40,10 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/buscador.vue': {
       routes: '/buscador'
+      views: never
+    }
+    'src/pages/classic.vue': {
+      routes: '/classic'
       views: never
     }
   }
