@@ -6,7 +6,14 @@
 
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
-import { routes } from 'vue-router/auto-routes'
+import BuscadorPelis from '@/components/BuscadorPelis.vue'
+
+const routes = [
+  {
+    path: '/',
+    component: BuscadorPelis,
+  },
+]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
